@@ -1,0 +1,36 @@
+Visual Studio 2015官方专业版激活密钥：HM6NR-QXX7C-DFW2Y-8B82K-WTYJV
+
+Visual Studio 2015官方企业版激活密钥：HM6NR-QXX7C-DFW2Y-8B82K-WTYJ
+
+
+win10 长期服务 slmgr.vbs /upk
+slmgr /ipk DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
+slmgr /skms xykz.f3322.org
+
+slmgr /ato
+
+腾讯云 ip 134.175.198.63 密码Hl@18902477517
+
+106.54.27.134
+
+
+git-keygen -t rsa -C "1041032635@qq.com"
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH3bEXdNHLwJec1bXz59I5az0Tx/Eoj+K9RlRw5/LVVni3E3iNlpz9vCWuAIGYfM+oUsfog5x0R9D9vcvYPcnTVDUS1aqml5IwPTCCh8V1tvK/VD7s17QoA9DU2GYasKeWYVMXjid0cTXxNMUIXk+9ATac6X+jfcy8R/mr9vzO4hcsF/xHel8aG1mbba38gISTkvcAJNGhL7G/+BwJd2XFl5ox8vqkgx9YrB9loaGOBYrz2wChGDM/rNooRNlKOJ1JqsSIU/ZutcJL+1XBVgiBSOr08l6m0aqOvLrCVA+Gd5/tqcY/CasEc7q5Zk3DGhFLU0c9vVUE5LJRQBBAJGuf 1041032635@qq.com
+
+/mtk 过滤整个文件夹
+*.zip 过滤所有.zip文件
+/mtk/do.c 过滤某个具体文件
+!/mtk/one.txt 追踪（不过滤）某个具体文件
+注意：如果你创建.gitignore文件之前就push了某一文件，那么即使你在.gitignore文件中写入过滤该文件的规则，该规则也不会起作用，git仍然会对该文件进行版本管理。
+
+配置语法
+以斜杠“/”开头表示目录；
+以星号“*”通配多个字符；
+以问号“?”通配单个字符
+以方括号“[]”包含单个字符的匹配列表；
+以叹号“!”表示不忽略(跟踪)匹配到的文件或目录。
+注意： git 对于 .gitignore配置文件是按行从上到下进行规则匹配的
+
+
+
