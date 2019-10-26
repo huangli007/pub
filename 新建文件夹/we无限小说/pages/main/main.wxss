@@ -1,0 +1,250 @@
+/* pages/main/main.wxss */
+
+.root {
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  
+}
+
+.content {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-top: 1px #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  
+}
+
+.content .item1 {
+  background: url(http://p2.music.126.net/NFb92_shbD9x21gJfMIJoQ==/76965813957070.jpg) no-repeat;
+  background-size: cover;
+  color: rgb(0, 68, 255);
+}
+
+.content .item2 {
+  background: url(http://p1.music.126.net/-NJ6V-eOoKnQsyaqdwfxYg==/748767418527528.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.content .item3 {
+  background: url(http://p2.music.126.net/gsLYUhZsZbRLXQt_TOaDIw==/109951164287662942.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.content2 {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 2px;
+  
+  background-color: linear-gradient( top,#fff,lightblue
+  ,rgb(83, 201, 248));
+}
+
+.content2 .box {
+  
+  padding-top: 0.5rem;
+  display: flex;
+  width: 24%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+  padding-bottom: 8rpx;
+  
+}
+
+.content2 .box image {
+  width: 50px;
+  height: 50px;
+  
+}
+
+
+
+.content2 .box .express {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8rpx;
+}
+
+.navigator {
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem 0;
+}
+
+.baidu {
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  width: 100%;
+  border: 1px solid #f40;
+}
+
+.baidu .text {
+  float: left;
+  max-width: 60%;
+  text-align: left;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.baidu  button {
+  float: right;
+  max-width: 40%;
+  font-size: 14px;
+}
+
+.scroll{
+  height: 100px;
+  margin-top: 1.5rem;
+  margin-bottom: 1ren;
+  display: flex;
+  white-space: nowrap;
+  border-bottom: 2rpx solid rgba(182, 177, 177, 0.5);
+  
+}
+
+.scroll .scroll-item{
+  margin: 4px 2px;
+  width: 300px;
+  height: 100%;
+  display: inline-block;
+  align-items:center;
+  justify-content:center;
+  
+}
+.scroll .item4{
+   background: url(http://www.8kqw.com/uploads/thumb/200x150/2019/10/16/f96f6bdafbfe5a0d7543df2c06cb6d83.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.scroll .item5{
+  background: url(http://www.8kqw.com/uploads/thumb/200x150/2019/10/15/6d3162d471e8b4ef8df1ac8836773159.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.scroll .item6{
+  background: url(http://www.8kqw.com/static/images/8kqw/loan/jiaju.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.content3{
+  width: 100%;
+  display: flex;
+  
+  padding: 4rpx 4rpx;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content3 .img-item{
+  width: 200rpx;
+  height:150rpx;
+  margin:10rpx 10rpx;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+}
+
+.content-body{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  border-bottom: 18rpx solid rgba(182, 177, 177, 0.5);
+}
+
+.title {
+  padding: 0 1rem;
+  
+  font-size: 30rpx;
+  font-weight: 300;
+  letter-spacing: 4rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  margin-top: 4rpx;
+  border-bottom: 4rpx solid rgba(182, 177, 177, 0.5);
+  
+}
+
+.title .right{
+  float: right;
+}
+
+.title .left{
+  float: left;
+}
+
+.bottom_text {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.content_news{
+width: 100%;
+  
+}
+
+.news_box{
+  width: 100%;
+  margin: 0.1rem 0.2rem;
+  padding:  0.5rem 0.5rem;
+  display: flex;
+  
+  max-height: 150px;
+}
+
+.bottom_text{
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.news-item{
+width: 100px;
+max-height: 75px;
+padding: 16rpx 16rpx;
+}
+.top{
+  
+  font-size: 40rpx;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
+width: 100%;
+max-width: 500rpx;
+
+
+
+
+}
+
+.new_bottom{
+  margin-top: 40px; 
+  vertical-align: bottom;
+  font-size:30rpx;
+  font-weight: 300;
+}
+
+.footer{
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center; 
+  font-weight: 300; 
+}

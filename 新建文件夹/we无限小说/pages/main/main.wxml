@@ -1,0 +1,92 @@
+<!--pages/main/main.wxml-->
+<view class="root">
+  <view>
+    <swiper class="content" indicator-dots="true" circular="true" indicator-active-color="rgb(0, 68, 255)" autoplay="true" duration="800" interval="1500" display-multiple-items="1" previous-margin="60px" easing-function="easeInOutCubic" next-margin="60px">
+      <swiper-item class="item item1"></swiper-item>
+      <swiper-item class="item item2"></swiper-item>
+      <swiper-item class="item item3"></swiper-item>
+
+
+    </swiper>
+  </view>
+  <view class="content2">
+
+
+    <block wx:for="{{local_img}}">
+
+      <view class=" box" bindtap="baidu">
+        <image src="{{item.src}}" mode="scaleToFill"></image>
+        <view class="express">{{item.name}}</view>
+      </view>
+      
+
+
+    </block>
+
+  </view>
+  <!-- <view class="navigator">
+  <navigator url="../baidu/baidu" target="" open-type="navigate">
+    <button type="primary">百度一下</button>
+  </navigator>
+  <!-- <web-view src="https://www.baidu.com">baidu</web-view> -->
+  <!-- <form class="baidu" action>
+    <input type="text" confirm-type="search" placeholder="请输入关键词" class="text" name=""></input>
+    <button form-type="submit" size="mini">百度一下</button>
+  </form>
+  
+</view> -->
+  <view class="scroll-box">
+    <scroll-view class="scroll" scroll-x scroll-into-view="scroll1">
+      <view class="scroll-item item4" id="scroll1" style=""></view>
+      <view class="scroll-item item5" id="scroll2"></view>
+      <view class="scroll-item item6" id="scroll3"></view>
+    </scroll-view>
+
+  </view>
+
+  <view class="content-body">
+    <view class="title">
+      <view class="left">家庭装修</view>
+      <view class="right"><navigator>更多</navigator></view>
+      
+    </view>
+    <view style="" class="content3">
+      <view wx:for="{{url}}">
+        <image src="{{item}}" class="img-item"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="content-body">
+    <view class="title">
+      <view class="left">热门品类</view>
+      <view class="right"><navigator>更多</navigator></view>
+      
+    </view>
+    <view style="" class="content2">
+      <view wx:for="{{url2}}" class="box">
+        <view><image src="{{item.src}}" class="img-item"></image></view>
+        <view class="bottom_text">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="content-body">
+    <view class="title">
+      <view class="left">热门品类</view>
+      <view class="right"><navigator>更多</navigator></view>
+      
+    </view>
+    <view style="" class="content_news">
+      <view wx:for="{{url3}}" class="news_box">
+        <view><image src="{{item.src}}" class="news-item" mode="scaleToFill"></image></view>
+        <view class="bottom_text">
+          <view class="top">{{item.title}}</view>
+          <view class="new_bottom">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view>-----到底啦！！！-----</view>
+  </view>
+</view>

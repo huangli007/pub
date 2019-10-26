@@ -1,0 +1,4 @@
+/* pages/cart_1/cart_1.wxss */
+map{
+  width: 100%;
+}

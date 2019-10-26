@@ -1,0 +1,71 @@
+<!-- <view class="header">
+  <view>导航栏</view>
+</view>
+<view class="body">
+  <view class="first">
+    <navigator url="https://www.douyu.com/138243" class="a">
+      <image src="/img/account-filling_black.png " mode="aspectFix"></image>
+      <view>歌神洞庭湖</view>
+    </navigator>
+  </view>
+  <view>
+
+  </view>
+</view> -->
+
+<view class="success icon">
+  <icon type="success" size="{{icon.size}}" style="opacity:{{icon.opacity/10}};"></icon>
+</view>
+
+<view  class="success">
+  <text style='font-size:0.8rem;'>调整大小</text>
+  <slider max="100" min="50"step="1" value="{{icon.size}}" bindchange="changesize"></slider>
+  <view></view>
+</view>
+<view class='success'>
+  <view>调整透明度</view>
+  <slider max='10' min='1' step='1'  bindchange='changeoparity'></slider>
+</view>
+
+<picker range='{{list}}' value='{{selectedIndex}}' bindchange='change' mode="selector" range-key='' disabled=''>
+  <view class='picker'>当前选中：{{list[selectedIndex]}}</view>
+</picker >
+<picker  value='{{selectedTime}}' bindchange='' mode="time"  disabled=''>
+  <view class='picker'>当前时间选中：{{list[selectedIndex]}}</view>
+</picker >
+<!-- <input wx:for="{{inputtype}}">
+
+</input>
+
+<view wx:for="{{inputtype}}" class='item'>
+  <input type='{{item}}' placeholder='{{item}}' ></input>
+  
+</view> -->
+
+<button   hover-class='button-hover'  hover-start-time='50' hover-stay-time='1000' bindtap='call' open-type='getUserInfo' >点击拨号</button>
+
+<button  hover-start-time='50' hover-stay-time='1000' hover-class='button-hover1' bindtap='request'>request请求</button>
+<form  >
+  <input name="name" placeholder='请输入你的名字' class='name' ></input>
+  <button form-type='reset'> 重置</button>
+  <button form-type='submit' bindtap='request'>提交</button>
+</form>
+
+<image class='image' src='../../img/1.jpg' mode='widthFix'>
+  
+</image>
+
+<swiper indicator-dots='true' autoplay='true' duration='300' circular='true' interval='3000'>
+  <swiper-item class="swiper bg-red">swiper1 </swiper-item>
+  <swiper-item class="swiper bg-green">swiper2</swiper-item>
+  <swiper-item class="swiper bg-yellow">swiper3</swiper-item>
+
+</swiper>
+<audio src='./1.mp3'  controls='true' name='麦振鸿 - 时空之钥' author='master' bindtap="audio">
+</audio>
+
+<contact-button></contact-button>
+<video src='./TMAKER.mp4' controls enable-danmu='true' danmu-btn='true'></video>
+<!-- <open-data type="userNickName" open-gid="xxxxxx"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userCity" lang="zh_CN"></open-data> -->

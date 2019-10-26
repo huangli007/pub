@@ -1,0 +1,3 @@
+<!--pages/baidu/baidu.wxml-->
+<!-- <navigator open-type="navigateBack" delta="1">返回</navigator> -->
+<web-view src="https://www.baidu.com">baidu</web-view>

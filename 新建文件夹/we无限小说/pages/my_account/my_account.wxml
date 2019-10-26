@@ -1,0 +1,88 @@
+<!--pages/my_account/my_account.wxml-->
+<view class="root">
+  <view class="userinfo">
+    <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+    <view class="info">
+      <open-data type="userAvatarUrl" id="touxiang"></open-data>
+    </view>
+
+    <view>
+      <open-data type="userNickName" id="name"></open-data> 先生 </view>
+
+    <!-- 需要使用 button 来授权登录 -->
+    <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+    <!-- <view wx:else>请升级微信版本</view> -->
+
+  </view>
+  <view>
+    <view class="title">
+      <view id="header">这个是一首网易歌曲，请欣赏=。=</view>
+    </view>
+    <!-- <view>
+    <button size="mini" lang="zh_CN" type="primary" open-type="getUserInfo" bindgetuserinfo="">获取用户信息</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="contact" bindcontact="">打开客服会话</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="getPhoneNumber" >获取用户手机号</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="launchApp" >打开APP</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="share" >触发用户转发</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="openSetting" >打开授权设置页</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="feedback" >打开“意见反馈”页面</button>
+    <button size="mini" lang="zh_CN" type="primary" bindtap="scan">扫码</button>
+    <button size="mini" lang="zh_CN" type="primary" open-type="getUserInfo"></button>
+  </view> -->
+    <view style="width:100%;">
+
+      <video bindtap="video" id="video" src="" controls poster="http://p4.music.126.net/XjMlzreH06G6NIyye1n6Ew==/18577348464815568.jpg?param=200y200"
+        title="as long as you love me" objectFit="contain"></video>
+    </view>
+    <view class="adContainer">
+      <ad unit-id="1" ad-intervals="30"></ad>
+    </view>
+  </view>
+  <view class="content-box">
+    <view class="box1 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box2 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box3 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box4 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box5 box">
+      <view class="top">
+        <icon type="search"  size="40"></icon>
+      </view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box6 box">
+      <view class="top">
+        <icon type="success" id="fill" size="40"></icon>
+      </view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box7 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box8 box">
+      <view class="top">
+        <icon type="success"></icon>
+      </view>
+      <view class="bottom">充值中心</view>
+    </view>
+    <view class="box9 box">
+      <view class="top"></view>
+      <view class="bottom">充值中心</view>
+    </view>
+  </view>
+  <view class="footer">
+    <view id="end">---------到底啦！！！---------</view>
+  </view>
+</view>
